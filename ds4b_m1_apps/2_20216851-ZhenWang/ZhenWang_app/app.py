@@ -18,7 +18,7 @@ st.set_page_config(
     page_title="HR Analysis",
     page_icon="🔍")
 
-hru=pd.read_csv("./hru.csv")
+hru=pd.read_csv("https://raw.githubusercontent.com/HamidBekamiri/stu_rep_m1/main/ds4b_m1_apps/2_20216851-ZhenWang/ZhenWang_app/hru.csv")
 
 st.title('Predict Your Income in Company X')
 
