@@ -86,10 +86,10 @@ with tab1:
 
         @st.experimental_singleton
         def read_objects():
-            model_xgb = pickle.load(open('model_xgb.pkl','rb'))
-            scaler = pickle.load(open('scaler.pkl','rb'))
-            ohe = pickle.load(open('ohe.pkl','rb'))
-            shap_values = pickle.load(open('shap_values.pkl','rb'))
+            model_xgb = pickle.load(open('../stu_rep_m1/ds4b_m1_apps/4_BDS_Bank_Telemarketing_Project/Notebooks/model_xgb.pkl','rb'))
+            scaler = pickle.load(open('../stu_rep_m1/ds4b_m1_apps/4_BDS_Bank_Telemarketing_Project/Notebooks/scaler.pkl','rb'))
+            ohe = pickle.load(open('../stu_rep_m1/ds4b_m1_apps/4_BDS_Bank_Telemarketing_Project/Notebooks/ohe.pkl','rb'))
+            shap_values = pickle.load(open('../stu_rep_m1/ds4b_m1_apps/4_BDS_Bank_Telemarketing_Project/Notebooks/shap_values.pkl','rb'))
             cats = list(itertools.chain(*ohe.categories_))
             return model_xgb, scaler, ohe, cats, shap_values
 
