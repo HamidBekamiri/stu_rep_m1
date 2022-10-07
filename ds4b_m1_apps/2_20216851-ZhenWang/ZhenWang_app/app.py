@@ -38,9 +38,9 @@ st.image('https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?ixlib=rb-
 @st.experimental_singleton
 def read_objects():
     model_xgb = pickle.load(open('../stu_rep_m1/ds4b_m1_apps/2_20216851-ZhenWang/ZhenWang_app/model_xgb.pkl','rb'))
-    scaler = pickle.load(open('scaler.pkl','rb'))
-    ohe_pkl = pickle.load(open('ohe.pkl','rb'))
-    shap_values = pickle.load(open('shap_values.pkl','rb'))
+    scaler = pickle.load(open('../stu_rep_m1/ds4b_m1_apps/2_20216851-ZhenWang/ZhenWang_app/scaler.pkl','rb'))
+    ohe_pkl = pickle.load(open('../stu_rep_m1/ds4b_m1_apps/2_20216851-ZhenWang/ZhenWang_app/ohe.pkl','rb'))
+    shap_values = pickle.load(open('../stu_rep_m1/ds4b_m1_apps/2_20216851-ZhenWang/ZhenWang_app/shap_values.pkl','rb'))
     cats = list(itertools.chain(*ohe_pkl.categories_))
     print(len(cats))
     return model_xgb, scaler, ohe_pkl, cats, shap_values
