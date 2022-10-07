@@ -37,7 +37,7 @@ st.image('https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?ixlib=rb-
 # ---- READ PREPROCESSED MODEL ----
 @st.experimental_singleton
 def read_objects():
-    model_xgb = pickle.load(open('model_xgb.pkl','rb'))
+    model_xgb = pickle.load(open('../model_xgb.pkl','rb'))
     scaler = pickle.load(open('scaler.pkl','rb'))
     ohe_pkl = pickle.load(open('ohe.pkl','rb'))
     shap_values = pickle.load(open('shap_values.pkl','rb'))
