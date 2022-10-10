@@ -49,7 +49,7 @@ col1.metric("# Observations in total", 41.188, "- 7.15%")
 col2.metric("Features", 21, "- 3 features")
 
 #Show a table of features
-df = pd.read_csv("variables_desc.csv")
+df = pd.read_csv("../stu_rep_m1/ds4b_m1_apps/assignment_1_streamlit/variables_desc.csv")
 st.dataframe(data=df) #, width=None, height=None, *, use_container_width=False)
 
 #Show a descriptive table of the numeric features in the cleaned data dataset
