@@ -1,0 +1,1 @@
+pip install -r assignment-1/requirements.txt

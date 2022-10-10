@@ -1,0 +1,22 @@
+,Feature,Description
+0,age,age of the client
+1,job, type of job of the client
+2,marital,marital status of the client
+3,education,educational background of the client
+4,default,does the client have a credit in default?
+5,housing,does the client have a housing loan?
+6,loan,does the client have a personal loan?
+7,contact,contact communication type
+8,month,client has been last contacted in this month
+9,dayofweek,client has been last contacted on this day of the week
+10,duration,last contact duration in seconds
+11,campaign,number of contacts performed during this campaign and for this client
+12,pdays,number of days that passed by after the client was last contacted from a previous campaign
+13,previous,number of contacts performed before this campaign and for this client
+14,poutcome,outcome of the previous marketing campaign
+15,emp.var.rate,employment variation rate - quarterly indicator
+16,cons.price.idx,consumer price index - monthly indicator
+17,cons.conf.idx,consumer confidence index - monthly indicator
+18,euribor3m,euribor 3 month rate - daily indicator
+19,nr.employed,number of employees - quarterly indicator
+20,y,has the client subscribed a term deposit?
