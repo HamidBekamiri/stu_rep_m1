@@ -22,7 +22,7 @@ st.set_page_config(
 # RASMUS DATA
 @st.experimental_singleton
 def load_data():
-    bank_data = pd.read_csv("./bank_marketing.csv", sep=';')
+    bank_data = pd.read_csv("../stu_rep_m1/ds4b_m1_apps/bank_marketing.csv", sep=';')
     bank_data.drop('default', axis=1, inplace =True)
     bank_data = bank_data.replace('unknown', NaN)
     bank_data_clean = bank_data.dropna(subset=['job', 'marital', 'education', 'housing', 'loan'])
@@ -33,9 +33,9 @@ bank_data_clean = load_data()
 # IMPORT PICKLE FILES 
 @st.experimental_singleton #decorator and 0-parameters function to only load and preprocess once
 def read_objects():
-    model_xgb = pickle.load(open('pickles/final_model.pkl','rb'))
-    scaler = pickle.load(open('pickles/scalersml.pkl','rb'))
-    ohe = pickle.load(open('pickles/ohe.pkl','rb'))
+    model_xgb = pickle.load(open('../stu_rep_m1/ds4b_m1_apps/pickles/final_model.pkl','rb'))
+    scaler = pickle.load(open('../stu_rep_m1/ds4b_m1_apps/pickles/scalersml.pkl','rb'))
+    ohe = pickle.load(open('../stu_rep_m1/ds4b_m1_apps/pickles/ohe.pkl','rb'))
     cats = list(itertools.chain(*ohe.categories_))
     return model_xgb, scaler, ohe, cats
 
