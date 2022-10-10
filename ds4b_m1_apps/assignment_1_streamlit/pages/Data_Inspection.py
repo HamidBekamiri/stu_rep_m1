@@ -22,7 +22,7 @@ st.set_page_config(
 # RASMUS DATA
 @st.experimental_singleton
 def load_data():
-    bank_data = pd.read_csv("../ds4b_m1_apps/bank_marketing.csv", sep=';')
+    bank_data = pd.read_csv("./ds4b_m1_apps/bank_marketing.csv", sep=';')
     bank_data.drop('default', axis=1, inplace =True)
     bank_data = bank_data.replace('unknown', NaN)
     bank_data_clean = bank_data.dropna(subset=['job', 'marital', 'education', 'housing', 'loan'])
