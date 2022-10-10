@@ -33,7 +33,7 @@ bank_data_clean = load_data()
 # IMPORT PICKLE FILES 
 @st.experimental_singleton #decorator and 0-parameters function to only load and preprocess once
 def read_objects():
-    model_xgb = pickle.load(open('../ds4b_m1_apps/pickles/final_model.pkl','rb'))
+    model_xgb = pickle.load(open('./ds4b_m1_apps/pickles/final_model.pkl','rb'))
     scaler = pickle.load(open('../ds4b_m1_apps/pickles/scalersml.pkl','rb'))
     ohe = pickle.load(open('../ds4b_m1_apps/pickles/ohe.pkl','rb'))
     cats = list(itertools.chain(*ohe.categories_))
